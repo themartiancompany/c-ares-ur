@@ -1,4 +1,3 @@
-# $Id: PKGBUILD,v 1.4 2008/02/05 21:19:04 jeff Exp $
 # Maintainer: Jeff Mickey <jeff@archlinux.org>
 # Maintainer: Vinay S Shastry <vinayshastry@gmail.com>
 pkgname=c-ares
