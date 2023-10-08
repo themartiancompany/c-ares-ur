@@ -24,10 +24,10 @@ validpgpkeys=('27EDEAF22F3ABCEB50DB9A125CC908FDB71E12C2') # Daniel Stenberg <dan
 build() {
   local cmake_options=(
     -B build
-    -DCMAKE_INSTALL_PREFIX=/usr
-    -DCMAKE_BUILD_TYPE=None
+    -D CMAKE_INSTALL_PREFIX=/usr
+    -D CMAKE_BUILD_TYPE=None
     -S $pkgname-$pkgver
-    -Wno-dev
+    -W no-dev
   )
   cmake "${cmake_options[@]}"
   cmake --build build --verbose
