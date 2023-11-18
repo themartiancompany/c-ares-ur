@@ -5,7 +5,7 @@
 # Contributor: Alexander Fehr <pizzapunk gmail com>
 
 pkgname=c-ares
-pkgver=1.21.0
+pkgver=1.22.0
 pkgrel=1
 pkgdesc="A C library for asynchronous DNS requests"
 arch=(x86_64)
@@ -15,9 +15,9 @@ depends=(glibc)
 makedepends=(cmake)
 provides=(libcares.so)
 source=(https://github.com/$pkgname/$pkgname/releases/download/${pkgname//-}-${pkgver//./_}/$pkgname-$pkgver.tar.gz{,.asc})
-sha512sums=('c526b0a28d8ea1c6a53215dfd52e8250c968513a667c5414459d97d46288da7e7a2193d757fc78225e56c6684b3d30e756dd3e5a31917e996c871773a34892ea'
+sha512sums=('b84b774090bbeae7ad2eabeb223a12474e42f2efcc4e2209fcda260b1fe29337549eb7827eb7f75475fade65b6e1ab719abdae0ff543309c1914aa9cef65cd01'
             'SKIP')
-b2sums=('708933603dfc6c0286e798b3244eb9d8bce500acb915a255b82e00133509e5c2ceaad6b9b4cd081fcd9193b64fdb72e4e7ff6deeca8eb1744124ab9239cacac0'
+b2sums=('0f70c2cfe9e5076eaa97262a9b34d915d755618dc89884a2d743a0d47827bb99d2a1d1bb655aff92d8c85a19a4420a1e685d91f82b9f7a55cc2feb5daa27fd41'
         'SKIP')
 validpgpkeys=('27EDEAF22F3ABCEB50DB9A125CC908FDB71E12C2') # Daniel Stenberg <daniel@haxx.se>
 
