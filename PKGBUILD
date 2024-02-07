@@ -1,4 +1,8 @@
-# Maintainer: David Runge <dvzrv@archlinux.org>
+# SPDX-License-Identifier: AGPL-3.0
+#
+# Maintainer:  David Runge <dvzrv@archlinux.org>
+# Maintainer:  Pellegrino Prevete <cGVsbGVncmlub3ByZXZldGVAZ21haWwuY29tCg== | base -d>
+# Maintainer:  Truocolo <truocolo@aol.com>
 # Contributor: Dave Reisner <dreisner@archlinux.org>
 # Contributor: Daniel J Griffiths <ghost1227@archlinux.us>
 # Contributor: Jeff Mickey <jeff@archlinux.org>
@@ -55,3 +59,5 @@ package() {
   install -vDm 644 $pkgname-$pkgver/LICENSE.md -t "$pkgdir/usr/share/licenses/$pkgname/"
   install -vDm 644 $pkgname-$pkgver/{AUTHORS,CHANGES,{CONTRIBUTING,README,RELEASE-NOTES}.md} -t "$pkgdir/usr/share/doc/$pkgname/"
 }
+
+# vim:set sw=2 sts=-1 et:
