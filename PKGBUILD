@@ -4,14 +4,25 @@
 # Contributor: Jeff Mickey <jeff@archlinux.org>
 # Contributor: Alexander Fehr <pizzapunk gmail com>
 
+_os="$( \
+  uname \
+    -o)"
 pkgname=c-ares
 pkgver=1.26.0
 pkgrel=1
 pkgdesc="A C library for asynchronous DNS requests"
-arch=(x86_64)
+arch=(
+  x86_64
+  aarch64
+  arm
+)
 url="https://c-ares.org/"
 license=(MIT)
-depends=(glibc)
+depends=()
+[[ "${_os}" == "GNU/Linux" ]] && \
+  depends+=(
+    glibc
+  )
 makedepends=(cmake)
 provides=(libcares.so)
 source=(
